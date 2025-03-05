@@ -1,0 +1,21 @@
+{
+  "prefix": "vscode-material-icons",
+  "name": "VSCode Material Icons",
+  "total": 1019,
+  "version": "5.20.0",
+  "author": {
+    "name": "material-extensions",
+    "url": "https://github.com/material-extensions"
+  },
+  "license": {
+    "title": "MIT",
+    "spdx": "MIT",
+    "url": "https://github.com/material-extensions/vscode-material-icon-theme/blob/main/LICENSE"
+  },
+  "samples": ["vue", "javascript", "pug", "folder-app"],
+  "height": 24,
+  "displayHeight": 16,
+  "category": "Programming",
+  "tags": [],
+  "palette": true
+}

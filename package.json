@@ -1,0 +1,101 @@
+{
+  "name": "iconify-json-vscode-material-icons",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.5.2",
+  "description": "Iconify json data for vscode-material-icons",
+  "keywords": [
+    "icon-collection",
+    "icon-set",
+    "iconify-icons",
+    "iconify-json",
+    "material-icons",
+    "vscode-material-icons"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "ntnyq",
+    "email": "ntnyq13@gmail.com"
+  },
+  "homepage": "https://github.com/ntnyq/iconify-json-vscode-material-icons#readme",
+  "repository": "ntnyq/iconify-json-vscode-material-icons",
+  "bugs": {
+    "url": "https://github.com/ntnyq/iconify-json-vscode-material-icons/issues"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    },
+    "./icons.json": "./icons.json",
+    "./info.json": "./info.json"
+  },
+  "main": "./index.mjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "files": [
+    "chars.json",
+    "icons.json",
+    "index.cjs",
+    "index.d.ts",
+    "index.mjs",
+    "info.json",
+    "metadata.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "iconSet": {
+    "icons": "icons.json",
+    "info": "info.json"
+  },
+  "iconSetVersion": "5.20.0",
+  "sideEffects": false,
+  "scripts": {
+    "build": "run-s scripts:prepare-icons scripts:generate-collection",
+    "lint": "eslint .",
+    "prepare": "husky",
+    "prepublishOnly": "pnpm run build",
+    "release": "run-s release:check release:publish",
+    "release:check": "run-s lint typecheck test",
+    "release:publish": "bumpp && pnpm publish",
+    "scripts:generate-collection": "tsx scripts/generateCollection.ts",
+    "scripts:prepare-icons": "tsx scripts/prepareIcons.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@iconify/types": "*"
+  },
+  "devDependencies": {
+    "@iconify/tools": "^4.1.1",
+    "@ntnyq/eslint-config": "^4.0.0-beta.9",
+    "@ntnyq/prettier-config": "^2.0.0",
+    "@types/node": "^22.13.9",
+    "bumpp": "^10.0.3",
+    "consola": "^3.4.0",
+    "eslint": "^9.21.0",
+    "husky": "^9.1.7",
+    "nano-staged": "^0.8.0",
+    "npm-run-all2": "^7.0.2",
+    "prettier": "^3.5.3",
+    "tinyexec": "^0.3.2",
+    "tinyglobby": "^0.2.12",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "uncase": "^0.0.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ],
+    "overrides": {
+      "esbuild": "^0.25.0"
+    }
+  },
+  "nano-staged": {
+    "*.{js,ts,mjs,cjs,json,md,yml,yaml}": "eslint --fix",
+    "*.{css,scss,html}": "prettier -uw"
+  }
+}
