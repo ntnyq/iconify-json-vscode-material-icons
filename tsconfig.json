@@ -10,7 +10,6 @@
     "declaration": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
-    "isolatedDeclarations": true,
     "esModuleInterop": true,
     "strict": true,
     "skipLibCheck": true
@@ -19,6 +18,8 @@
     "./src/**/*.ts",
     "./tests/**/*.ts",
     "./scripts/**/*.ts",
-    "./packages/**/*.ts"
+    "./packages/**/*.ts",
+    "./playground/**/*.ts",
+    "./playground/**/*.vue"
   ]
 }

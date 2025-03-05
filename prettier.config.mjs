@@ -6,6 +6,17 @@ export default defineConfig({
   ...config,
 
   overrides: [
-    // override if necessary
+    {
+      files: ['**/*.html'],
+      options: {
+        singleAttributePerLine: false,
+      },
+    },
+    {
+      files: ['**/*.{css,scss}'],
+      options: {
+        singleQuote: false,
+      },
+    },
   ],
 })

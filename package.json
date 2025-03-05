@@ -56,6 +56,8 @@
   "scripts": {
     "build": "run-s scripts:prepare-icons scripts:generate-collection",
     "lint": "eslint .",
+    "play": "pnpm -C playground run dev",
+    "play:build": "pnpm -C playground run build",
     "prepare": "husky",
     "prepublishOnly": "pnpm run build",
     "release": "run-s release:check release:publish",
@@ -95,7 +97,7 @@
     }
   },
   "nano-staged": {
-    "*.{js,ts,mjs,cjs,json,md,yml,yaml}": "eslint --fix",
+    "*.{js,ts,mjs,cjs,md,vue,yml,yaml,json}": "eslint --fix",
     "*.{css,scss,html}": "prettier -uw"
   }
 }

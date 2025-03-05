@@ -29,7 +29,8 @@
     "lcov",
     "pnpm",
     "vite",
-    "vitepress"
+    "vitepress",
+    "vueuse"
   ],
   "cSpell.allowCompoundWords": true
 }
