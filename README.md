@@ -10,16 +10,42 @@ A starter template for node projects.
 ## Install
 
 ```shell
-npm install iconify-json-vscode-material-icons
+npm install iconify-json-vscode-material-icons -D
 ```
 
 ```shell
-yarn add iconify-json-vscode-material-icons
+yarn add iconify-json-vscode-material-icons -D
 ```
 
 ```shell
-pnpm add iconify-json-vscode-material-icons
+pnpm add iconify-json-vscode-material-icons -D
 ```
+
+## Usage
+
+Config in your `{uno,unocss}.config.ts`
+
+```ts
+import { defineConfig, presetIcons } from 'unocss'
+
+export default defineConfig({
+  presets: [
+    presetIcons({
+      collections: {
+        'vscode-material-icons': () =>
+          import('iconify-json-vscode-material-icons/icons.json').then(
+            i => i.default,
+          ),
+      },
+    }),
+  ],
+})
+```
+
+## Files
+
+- Icon data is stored in `icons.json` in `IconifyJSON` format. See [IconifyJSON documentation](https://docs.iconify.design/types/iconify-json.html).
+- Icon set information is stored in `info.json` in `IconifyInfo` format. See [IconifyInfo documentation](https://docs.iconify.design/types/iconify-info.html).
 
 ## License
 
