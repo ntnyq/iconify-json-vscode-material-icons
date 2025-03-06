@@ -1,4 +1,4 @@
-import { copyFile } from 'node:fs/promises'
+import { copyFile, writeFile } from 'node:fs/promises'
 import { consola } from 'consola'
 import { glob } from 'tinyglobby'
 import { kebabCase } from 'uncase'
@@ -36,6 +36,14 @@ async function prepareIcons() {
         resolve(DIR_ICONS, `${kebabCase(fileName.replace(/\.svg$/, ''))}.svg`),
       ),
     ),
+  )
+
+  const iconNames = files.map(file => kebabCase(file.replace(/\.svg$/, '')))
+
+  await writeFile(
+    resolve('playground/src/assets/icons.json'),
+    `${JSON.stringify(iconNames, null, 2)}\n`,
+    'utf-8',
   )
 
   consola.success(`Icons has been prepared!`)

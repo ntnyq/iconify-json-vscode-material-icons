@@ -9,8 +9,11 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import icons from './src/assets/icons.json'
 
 export default defineConfig({
+  safelist: icons.map(icon => `i-vscode-material-icons:${icon}`),
+
   transformers: [transformerDirectives(), transformerVariantGroup()],
 
   presets: [
