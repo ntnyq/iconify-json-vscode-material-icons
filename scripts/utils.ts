@@ -23,7 +23,6 @@ export async function fsExists(path: string): Promise<boolean> {
 export async function fsRemove(path: string): Promise<void> {
   await rm(path, { recursive: true }).catch(() => {})
 }
-
 export async function runCommand(
   command: string,
   args?: string[],
