@@ -2,7 +2,7 @@
   "name": "iconify-json-vscode-material-icons",
   "type": "module",
   "version": "0.0.1",
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.6.2",
   "description": "Iconify json data for vscode-material-icons",
   "keywords": [
     "icon-collection",
@@ -47,11 +47,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "iconSet": {
-    "icons": "icons.json",
-    "info": "info.json"
-  },
-  "iconSetVersion": "5.20.0",
   "sideEffects": false,
   "scripts": {
     "build": "run-s scripts:prepare-icons scripts:generate-collection",
@@ -74,12 +69,12 @@
   },
   "devDependencies": {
     "@iconify/tools": "^4.1.1",
-    "@ntnyq/eslint-config": "^4.0.0-beta.10",
+    "@ntnyq/eslint-config": "^4.0.1",
     "@ntnyq/prettier-config": "^2.0.0",
-    "@types/node": "^22.13.9",
-    "bumpp": "^10.0.3",
+    "@types/node": "^22.13.10",
+    "bumpp": "^10.1.0",
     "consola": "^3.4.0",
-    "eslint": "^9.21.0",
+    "eslint": "^9.22.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^7.0.2",
@@ -90,16 +85,13 @@
     "typescript": "^5.8.2",
     "uncase": "^0.0.4"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ],
-    "overrides": {
-      "esbuild": "^0.25.0"
-    }
-  },
   "nano-staged": {
     "*.{js,ts,mjs,cjs,md,vue,yml,yaml,json}": "eslint --fix",
     "*.{css,scss,html}": "prettier -uw"
-  }
+  },
+  "iconSet": {
+    "icons": "icons.json",
+    "info": "info.json"
+  },
+  "iconSetVersion": "5.20.0"
 }

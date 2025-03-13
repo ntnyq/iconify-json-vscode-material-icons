@@ -5,7 +5,7 @@
 [![NPM DOWNLOADS](https://img.shields.io/npm/dy/iconify-json-vscode-material-icons.svg)](https://www.npmjs.com/package/iconify-json-vscode-material-icons)
 [![LICENSE](https://img.shields.io/github/license/ntnyq/iconify-json-vscode-material-icons.svg)](https://github.com/ntnyq/iconify-json-vscode-material-icons/blob/main/LICENSE)
 
-A starter template for node projects.
+Iconify json data for vscode-material-icons.
 
 ## Install
 
