@@ -65,25 +65,25 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@iconify/types": "*"
+    "@iconify/types": "catalog:"
   },
   "devDependencies": {
-    "@iconify/tools": "^4.1.2",
-    "@ntnyq/eslint-config": "^4.0.4",
-    "@ntnyq/prettier-config": "^2.0.0",
-    "@types/node": "^22.14.1",
-    "bumpp": "^10.1.0",
-    "consola": "^3.4.2",
-    "eslint": "^9.25.0",
-    "husky": "^9.1.7",
-    "nano-staged": "^0.8.0",
-    "npm-run-all2": "^7.0.2",
-    "prettier": "^3.5.3",
-    "tinyexec": "^1.0.1",
-    "tinyglobby": "^0.2.12",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.3",
-    "uncase": "^0.1.0"
+    "@iconify/tools": "catalog:",
+    "@ntnyq/eslint-config": "catalog:",
+    "@ntnyq/prettier-config": "catalog:",
+    "@types/node": "catalog:",
+    "bumpp": "catalog:",
+    "consola": "catalog:",
+    "eslint": "catalog:",
+    "husky": "catalog:",
+    "nano-staged": "catalog:",
+    "npm-run-all2": "catalog:",
+    "prettier": "catalog:",
+    "tinyexec": "catalog:",
+    "tinyglobby": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "uncase": "catalog:"
   },
   "nano-staged": {
     "*.{js,ts,mjs,cjs,md,vue,yml,yaml,json}": "eslint --fix",

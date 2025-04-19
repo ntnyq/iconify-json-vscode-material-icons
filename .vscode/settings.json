@@ -29,7 +29,9 @@
     "iconify",
     "lcov",
     "pnpm",
+    "tinyglobby",
     "vite",
+    "vitejs",
     "vitepress",
     "vueuse"
   ],

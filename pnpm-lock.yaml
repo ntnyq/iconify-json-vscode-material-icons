@@ -4,6 +4,84 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@iconify-json/ri':
+      specifier: ^1.2.5
+      version: 1.2.5
+    '@iconify/tools':
+      specifier: ^4.1.2
+      version: 4.1.2
+    '@iconify/types':
+      specifier: '*'
+      version: 2.0.0
+    '@ntnyq/eslint-config':
+      specifier: ^4.0.4
+      version: 4.0.4
+    '@ntnyq/prettier-config':
+      specifier: ^2.0.0
+      version: 2.0.0
+    '@ntnyq/utils':
+      specifier: ^0.6.4
+      version: 0.6.4
+    '@types/node':
+      specifier: ^22.14.1
+      version: 22.14.1
+    '@unocss/reset':
+      specifier: ^66.1.0-beta.12
+      version: 66.1.0-beta.12
+    '@vitejs/plugin-vue':
+      specifier: ^5.2.3
+      version: 5.2.3
+    '@vueuse/core':
+      specifier: ^13.1.0
+      version: 13.1.0
+    bumpp:
+      specifier: ^10.1.0
+      version: 10.1.0
+    consola:
+      specifier: ^3.4.2
+      version: 3.4.2
+    eslint:
+      specifier: ^9.25.0
+      version: 9.25.0
+    husky:
+      specifier: ^9.1.7
+      version: 9.1.7
+    nano-staged:
+      specifier: ^0.8.0
+      version: 0.8.0
+    npm-run-all2:
+      specifier: ^7.0.2
+      version: 7.0.2
+    prettier:
+      specifier: ^3.5.3
+      version: 3.5.3
+    tinyexec:
+      specifier: ^1.0.1
+      version: 1.0.1
+    tinyglobby:
+      specifier: ^0.2.12
+      version: 0.2.12
+    tsx:
+      specifier: ^4.19.3
+      version: 4.19.3
+    typescript:
+      specifier: ^5.8.3
+      version: 5.8.3
+    uncase:
+      specifier: ^0.1.0
+      version: 0.1.0
+    unocss:
+      specifier: ^66.1.0-beta.12
+      version: 66.1.0-beta.12
+    vite:
+      specifier: ^6.3.2
+      version: 6.3.2
+    vue:
+      specifier: ^3.5.13
+      version: 3.5.13
+
 overrides:
   esbuild: ^0.25.2
 
@@ -12,87 +90,87 @@ importers:
   .:
     dependencies:
       '@iconify/types':
-        specifier: '*'
+        specifier: 'catalog:'
         version: 2.0.0
     devDependencies:
       '@iconify/tools':
-        specifier: ^4.1.2
+        specifier: 'catalog:'
         version: 4.1.2
       '@ntnyq/eslint-config':
-        specifier: ^4.0.4
+        specifier: 'catalog:'
         version: 4.0.4(@types/eslint@9.6.1)(@typescript-eslint/utils@8.30.1(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-sfc@3.5.13)(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3)
       '@ntnyq/prettier-config':
-        specifier: ^2.0.0
+        specifier: 'catalog:'
         version: 2.0.0
       '@types/node':
-        specifier: ^22.14.1
+        specifier: 'catalog:'
         version: 22.14.1
       bumpp:
-        specifier: ^10.1.0
+        specifier: 'catalog:'
         version: 10.1.0
       consola:
-        specifier: ^3.4.2
+        specifier: 'catalog:'
         version: 3.4.2
       eslint:
-        specifier: ^9.25.0
+        specifier: 'catalog:'
         version: 9.25.0(jiti@2.4.2)
       husky:
-        specifier: ^9.1.7
+        specifier: 'catalog:'
         version: 9.1.7
       nano-staged:
-        specifier: ^0.8.0
+        specifier: 'catalog:'
         version: 0.8.0
       npm-run-all2:
-        specifier: ^7.0.2
+        specifier: 'catalog:'
         version: 7.0.2
       prettier:
-        specifier: ^3.5.3
+        specifier: 'catalog:'
         version: 3.5.3
       tinyexec:
-        specifier: ^1.0.1
+        specifier: 'catalog:'
         version: 1.0.1
       tinyglobby:
-        specifier: ^0.2.12
+        specifier: 'catalog:'
         version: 0.2.12
       tsx:
-        specifier: ^4.19.3
+        specifier: 'catalog:'
         version: 4.19.3
       typescript:
-        specifier: ^5.8.3
+        specifier: 'catalog:'
         version: 5.8.3
       uncase:
-        specifier: ^0.1.0
+        specifier: 'catalog:'
         version: 0.1.0
 
   playground:
     dependencies:
       '@ntnyq/utils':
-        specifier: ^0.6.4
+        specifier: 'catalog:'
         version: 0.6.4
       '@unocss/reset':
-        specifier: ^66.1.0-beta.12
+        specifier: 'catalog:'
         version: 66.1.0-beta.12
       '@vueuse/core':
-        specifier: ^13.1.0
+        specifier: 'catalog:'
         version: 13.1.0(vue@3.5.13(typescript@5.8.3))
       vue:
-        specifier: ^3.5.13
+        specifier: 'catalog:'
         version: 3.5.13(typescript@5.8.3)
     devDependencies:
       '@iconify-json/ri':
-        specifier: ^1.2.5
+        specifier: 'catalog:'
         version: 1.2.5
       '@vitejs/plugin-vue':
-        specifier: ^5.2.3
+        specifier: 'catalog:'
         version: 5.2.3(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(tsx@4.19.3)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))
       iconify-json-vscode-material-icons:
         specifier: workspace:*
         version: link:..
       unocss:
-        specifier: ^66.1.0-beta.12
+        specifier: 'catalog:'
         version: 66.1.0-beta.12(postcss@8.5.3)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(tsx@4.19.3)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))
       vite:
-        specifier: ^6.3.2
+        specifier: 'catalog:'
         version: 6.3.2(@types/node@22.14.1)(jiti@2.4.2)(tsx@4.19.3)(yaml@2.7.1)
 
 packages:
