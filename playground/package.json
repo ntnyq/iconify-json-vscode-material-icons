@@ -8,16 +8,16 @@
     "dev": "vite"
   },
   "dependencies": {
-    "@ntnyq/utils": "^0.6.1",
-    "@unocss/reset": "^66.1.0-beta.3",
-    "@vueuse/core": "^13.0.0",
+    "@ntnyq/utils": "^0.6.4",
+    "@unocss/reset": "^66.1.0-beta.12",
+    "@vueuse/core": "^13.1.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {
     "@iconify-json/ri": "^1.2.5",
-    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue": "^5.2.3",
     "iconify-json-vscode-material-icons": "workspace:*",
-    "unocss": "^66.1.0-beta.3",
-    "vite": "^6.2.1"
+    "unocss": "^66.1.0-beta.12",
+    "vite": "^6.3.2"
   }
 }
