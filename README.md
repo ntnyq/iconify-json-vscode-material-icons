@@ -7,6 +7,11 @@
 
 Iconify json data for vscode-material-icons.
 
+## Deprecated
+
+> [!WARNING]
+> Iconify now has an official support icon set [material-icon-theme](https://icon-sets.iconify.design/material-icon-theme), you can install it as package [@iconify-json/material-icon-theme](https://www.npmjs.com/package/@iconify-json/material-icon-theme).
+
 ## Install
 
 ```shell

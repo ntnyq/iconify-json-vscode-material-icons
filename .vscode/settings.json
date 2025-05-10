@@ -30,6 +30,7 @@
     "lcov",
     "pnpm",
     "tinyglobby",
+    "unrs",
     "vite",
     "vitejs",
     "vitepress",
